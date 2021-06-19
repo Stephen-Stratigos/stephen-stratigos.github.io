@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<title>Project Idea</title>
+	</head>
+	<body>
+		<h1 align="center">My Profile</h1>
+		<div style="text-align:center">
+			<a href="index.html"> Personal Information </a> |
+			<a href="interest_in_it.html"> Interest in IT </a> |
+			<a href="ideal_job.html"> Ideal Job </a> |
+			<a href="personal_profile.html"> Personal Profile </a> |
+			<a href="project_idea.html"> Project Idea </a>
+		</div>
+		<hr />
+		<div style="text-align:center">
+			<h1>Project Idea</h1>
+			<h2>Overview</h2>
+			<p>
+				My project idea is aimed at making it easier and quicker for emergency response vehicles to respond to emergencies on the road.
+				It consists of a signal sent out by emergency vehicles when they have their lights activated. This signal will act as a proximity
+				signal as well as carry some basic gps information. This information would be received by the non emergency vehicle and would
+				deliver a 3 teir visual/audio warning depending on proximity and location factors. This is to speed up driver awareness of emergency vehicles
+				and eliminate the possibility of car radios drowning out sirens. The visual warnings will be provided via 1 or more LED indicators
+				installed somewhere in or around the dashboard and the audio warning, used at the highest warning teir, will be integrated with the cars
+				speaker system allowing the system to cut off all other audio sources and deliver its own warning audio.
+				Such a system would likely need to be delivered through a government initiative. If taken to the transport minister and approved
+				such a system would have to be made mandatory to be affective. This could be rolled out as a safety feature into new cars. For 
+				older cars the system would have to be rolled out using esafety pink slip checks at cost of the government. This technology could
+				become a necessary component to pass an esafety check and could even potentially be used to automate the issuing of tickets for obstruction
+				of emergency vehicles.
+			</p>
+			<h2>Motivation</h2>
+			<p>
+				My motivation behind this project does not come from any researched statistics or inside knowledge. My motivation comes from all
+				the times I personally have seen emergency vehicles trying to respond to an emergency only to get stuck behind a driver who hasn't noticed
+				the emergency vehicle or just doesn't care. Maybe the driver is deaf and a visual indicator on the dash would make them aware.
+				Maybe the driver has their stereo up too loud to hear the sirens. It doesn't matter what the reason is it will be eliminated by this
+				system. As for drivers that don't care there is the possibility for automated ticketing should the government approve it. Just in my
+				personal experience I have seen these senarios too many times. When I see an ambulance responding to a medical emergency get stuck
+				behind an oblivious driver all I can think about is the poor patient waiting for that ambulance. Will the precious time wasted behind
+				that driver cost someone their life? If I am one driver witnessing this how many other drivers will witness the same ambulance
+				get stuck on this same call? How many other drivers will see other emergency vehicles get stuck on a given day? How many deaths, burned
+				down houses and violent assaults could have been reduced in severity or eliminated completely if this problem wasn't a factor.
+			</p>
+			<h2>Description</h2>
+			<p>
+				The emergency vehicle side of the system would consist of a proximity signal that is emitted in all directions. This signal should have an approximate
+				range that it travels. For example you could aim for 3 kilometers and that way you should reach everyone within a sufficient range. 
+				Target range can be tweaked after testing. The emergency vehicle will also have a gps attached to the system that transmits the current
+				street and either approximate street number or direction of travel of the emergency vehicle as part of the proximity signal.
+				<br><br>
+				The residential/commercial vehicle side of the system would consist of a receiver for the signal transmitted by the emergency vehicle
+				and would either integrate with a cars existing gps or would have a basic gps installed that comes with the system and is stripped back
+				to only give functionality required by the system to reduce cost. The system would also have a hub for the speaker system that allows it
+				to electronically swap the speaker system between a standard channel or a warning channel. Everything in the car that isn't part of the system
+				will run through the standard channel so that in 3rd teir warnings the speakers can be hijacked and a warning tone or message played to 
+				the driver. Updating of gps maps can be performed during esafety checks.
+				<br><br>
+				A teir one warning will simply be if a proximity signal is detected. This warning is displayed to the driver through the LED warning on the dash.
+				The LED warning system could consist of three LEDs or one LED with variable colour output.
+				<br>
+				A teir two warning will become active if the systems gps location matches the street transmitted by the emergency vehicle or if the street and direction
+				of both vehicles intersect.
+				<br>
+				A teir three warning would become active if a proximity signal is detected, the vehicles current streets match or intersect taking into account 
+				travel direction and the approximate street addresses returned by both vehicles gps are within a certain range. As an example if the non 
+				emergency vehicles gps calculates that the two vehicles paths are likely to intersect and the distance between their current locations is less
+				than 500 meters a teir 3 warning would activate.
+				<br><br>
+				Some sort of system would be necessary to avoid conflicting emergency signals. Perhaps some sort of channel system where receivers take signals
+				across a number of channels and emergency vehicles are set to a certain channel depending on what other channels vehicles in their area are using.
+				<br><br>
+				This system, while unlikely to be viable as a commercial product, has the potential to be picked up by our and possibly other governments as 
+				a mandatory system to pass a roadworthy esafety check. The nature of this product means it will either go nowhere or go everywhere and I believe
+				such a system could be made cheap enough to be well worth the benefit of reducing emergency vehicle congestion and the sudden panic some
+				drivers experience when they look in the rear view mirror and notice there is an emergency vehicle stuck behind them.
+			</p>
+			<h2>Tools and Technologies</h2>
+			<p>
+				The hardware required on the emergency vehicle side would be a basic gps system, an rf transmitter that is calibrated to transmit at an
+				appropriate range and some sort of link between the two. The link could be as simple as designing the gps to output the required data directly
+				to the rf transmitter.
+				<br><br>
+				The hardware required on the residential/commercial side would be a basic gps system with the same output as the emergency vehicle one,
+				An rf receiver that outputs the gps data picked up by an emergency vehicle and a control unit that takes the two components outputs and 
+				performs the necessary calculations to determine warning teir and outputs the appropriate warning.
+			</p>
+			<h2>Skills Required</h2>
+			<p>
+				Some new hardware would need to be engineered. Gps would need to be designed to output the appropriate data and rf transmitters engineered
+				to have a range that is suitable (not to long not to short). A control unit would also have to be engineered to take inputs and make map
+				related calculations. The control unit software would have to have similarities to gps direction giving software to determine finer proximity
+				and possible path intersections. I believe these skills and components would be reasonably easy to find as everything needed is already implemented
+				in other products in one way or another.
+			</p>
+			<h2>Outcome</h2>
+			<p>
+				Should this product be successful it would become a requirement for all vehicle owners. Anywhere it gets implemented it would become mandatory.
+				I believe this would solve the problem of emergency vehicles getting stuck behind drivers and would reduce risky actions by surprised drivers
+				via early warning. If this product is successful it could not only have a huge impact on emergency response times it could literally save
+				peoples lives and/or livelihood. It could also have a positive impact on insurance companies due to quicker emergency response times and 
+				create jobs for the manufacturing and auto-electrical industries.
+			</p>
+		</div>
+	</body>
+</html>
